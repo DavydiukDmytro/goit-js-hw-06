@@ -15,19 +15,7 @@ const images = [
 
 const galleryRef = document.querySelector('.gallery');
 
-const makeGallery = images => images.map(image => {
-  const liRef = document.createElement('li');
-  liRef.classList.add('grid__item');
-
-  const imgRef = document.createElement('img');
-  imgRef.src = image.url;
-  imgRef.alt = image.alt;
-  imgRef.classList.add('img');
-
-  liRef.append(imgRef);
-  return liRef;
-});
-
-const galleryElemnts = makeGallery(images);
-galleryRef.append(...galleryElemnts);
+let markup = images.map((image) => `<li class="grid__item"><img class="img" src="${image.url}" alt="${image.alt}"></li>`).join('');
+console.log(markup);
 galleryRef.classList.add('grid');
+galleryRef.innerHTML = markup;
