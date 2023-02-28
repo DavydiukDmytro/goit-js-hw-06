@@ -1,0 +1,2 @@
+!function(){var t={counter:document.querySelector("#value"),buttonDecrement:document.querySelector('button[data-action="decrement"]'),buttonIncrement:document.querySelector('button[data-action="increment"]')},e=Number(t.counter.textContent);t.buttonDecrement.addEventListener("click",(function(){e-=1,t.counter.textContent=e})),t.buttonIncrement.addEventListener("click",(function(){e+=1,t.counter.textContent=e}))}();
+//# sourceMappingURL=task-04.459c2c9b.js.map
