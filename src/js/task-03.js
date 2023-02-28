@@ -16,6 +16,5 @@ const images = [
 const galleryRef = document.querySelector('.gallery');
 
 let markup = images.map((image) => `<li class="grid__item"><img class="img" src="${image.url}" alt="${image.alt}"></li>`).join('');
-console.log(markup);
 galleryRef.classList.add('grid');
 galleryRef.innerHTML = markup;
